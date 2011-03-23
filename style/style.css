@@ -1,0 +1,16 @@
+ div {
+  width:38px;
+  height:38px;
+  position:absolute;
+  border-radius:38px;
+}
+
+div.zombie {
+  background:#F00;
+  z-index:2;
+}
+
+div.person {
+  background:#333;
+  z-index:1;
+}
