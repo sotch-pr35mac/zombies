@@ -10,13 +10,3 @@ $(document).ready(function() {
     zombie.moveTowards(people);
   }, 10)
 })
-
-function checkIndex(people, personTop, personLeft) {
-  var counter = 0;
-  while(counter<people.length) {
-    if(people[counter].htmlElement.offset().top == personTop && people[counter].htmlElement.offset().left == personLeft) {
-      return counter;
-    }
-    counter++;
-  }
-}

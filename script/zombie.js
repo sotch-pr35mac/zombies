@@ -70,8 +70,8 @@ Zombie.prototype = {
     });
     
     if(zombieTop == personTop && zombieLeft == personLeft) {
-      var currentPerson = checkIndex(people, personTop, personLeft);
-      people[currentPerson].htmlElement.remove();
+      closestPerson.htmlElement.remove();
+	  var currentPerson = people.indexOf(closestPerson);
       people.splice(currentPerson, 1);
     }
   },
