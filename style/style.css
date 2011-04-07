@@ -13,4 +13,5 @@ div.zombie {
 div.person {
   background:#333;
   z-index:1;
+  padding:2px;
 }

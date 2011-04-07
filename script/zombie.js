@@ -37,7 +37,7 @@ Zombie.prototype = {
     var personTop = closestPerson.htmlElement.offset().top;
     var personLeft = closestPerson.htmlElement.offset().left;
     
-    var zombieMultiplier = 10;
+    var zombieMultiplier = 14;
     
     var zombieTop = this.htmlElement.offset().top;
     var zombieLeft = this.htmlElement.offset().left;
