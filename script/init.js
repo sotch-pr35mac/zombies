@@ -13,7 +13,6 @@ $(document).ready(function() {
 	zombie.moveTowards(people);
 	while(x<people.length) {
 		people[x].moveAway(zombie, people, x);
-		console.log(people[x].toString())
 		x++;
 	}
   }, 10)
