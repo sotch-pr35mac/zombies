@@ -34,6 +34,13 @@ Zombie.prototype = {
   moveTowards: function(people) {
     var closestPerson = this.findClosest(people);
     
+	if(closestPerson == undefined) {
+		alert("Done!");
+		clearInterval(moveObjects);
+		window.stop();
+	}
+
+	else {
     var personTop = closestPerson.htmlElement.offset().top;
     var personLeft = closestPerson.htmlElement.offset().left;
     
@@ -74,5 +81,6 @@ Zombie.prototype = {
 	  var currentPerson = people.indexOf(closestPerson);
       people.splice(currentPerson, 1);
     }
+	};
   },
 }
